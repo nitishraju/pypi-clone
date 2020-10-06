@@ -1,2 +1,6 @@
 venv/
 .idea
+.vscode
+
+#bash script to set env variables
+setEnvVars.sh

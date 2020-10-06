@@ -1,18 +1,16 @@
+import os
+import sys
 import flask
+folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, folder)
 
-import services.package_service as package_service
+import pypi_app.views.home_views as home_views
 
 app = flask.Flask(__name__)
 
-@app.route('/')
-def index():
-    test_packages = package_service.get_latest_packages()
-    return flask.render_template('home/index.html', packages=test_packages)
-
-@app.route('/about')
-def about():
-    return flask.render_template('home/about.html')
+app.register_blueprint(home_views.blueprint)
 
 
 if __name__ == '__main__':
+    print(app.url_map)
     app.run(debug=True)
