@@ -17,6 +17,6 @@ def get_page(url: str) -> dict:
     url = url.lower().strip()
     url = '/' + url.lstrip('/')
 
-    page=fake_db.get(url, {})
+    page = fake_db.get(url, {})
     return page
 
