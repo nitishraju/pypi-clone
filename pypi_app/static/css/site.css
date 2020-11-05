@@ -1,8 +1,9 @@
 body {
     color: #222;
     background: #fff;
-    margin: 0px;
-    padding: 0px;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .title {
@@ -10,15 +11,16 @@ body {
 }
 
 .main_content {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 nav {
-    background-color: #000;
+    background-color: #0073b7;
     padding: 10px;
     font-size: 20px;
     color: white;
+    height: 85px;
 }
 
 nav > a {
@@ -32,7 +34,7 @@ a:hover {
 .hero {
     background-color: #006dad;
     color: white;
-    padding: 50px 0px;
+    padding: 50px 0 65px;
     text-align: center;
     font-size: 20px;
 }
@@ -51,6 +53,8 @@ a:hover {
     max-width: 630px;
     text-align: center;
     margin-left: 90px;
+    width: 100%;
+    padding-right: 12px;
 }
 
 .hero h1 {
@@ -60,4 +64,27 @@ a:hover {
 .hero a {
     color: white;
     text-decoration: underline;
+}
+
+.form-control {
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.pypi-stats {
+    background-color: #ECECEC;
+    text-align: center;
+    padding: 20px 0 19px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.pypi-stats .stat {
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 10px;
+    font-size: 19.2px;
+    color: #003d61;
 }
