@@ -21,10 +21,31 @@
         <div class="stat">463,005 users</div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid blurb">
+    </div>
+
+    <div class="container project-list">
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
+            <div class="col-md-1"></div>
+            <div class="col-lg-5">
+
+                <h2>Trending Projects</h2>
+
+                <div class="subtitle">
+                    Trending projects as downloaded by the community
+                </div>
+
+                {% for p in packages %}
+                <div class="project">
+                    <div class="title">
+                        <a href="#">{{ p.name }} {{ p.version }}</a>
+                        <div class="desc">PLACEHOLDER DESC</div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+            <div class="col-lg-5">
 
                 <h2>New Releases</h2>
 
@@ -42,7 +63,7 @@
                 {% endfor %}
 
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-1"></div>
         </div>
     </div>
 

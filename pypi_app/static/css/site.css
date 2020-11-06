@@ -88,3 +88,17 @@ a:hover {
     font-size: 19.2px;
     color: #003d61;
 }
+
+.blurb {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 50px 0 65px;
+    text-align: center;
+}
+
+.project-list .subtitle{
+    font-style: italic;
+}
+
+.project-list h2 {
+
+}
