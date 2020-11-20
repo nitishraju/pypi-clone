@@ -78,7 +78,9 @@ nav > a {
 }
 
 nav > .container-fluid {
-    margin: 0px 320px 0px 375px;
+    max-width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0px 30px;
 }
 

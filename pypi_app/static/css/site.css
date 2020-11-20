@@ -47,6 +47,7 @@ a:hover {
 
 .banner-text {
     padding-bottom: 40px;
+    margin: 0px 40px;
 }
 
 .search-bar {
@@ -91,9 +92,27 @@ a:hover {
 }
 
 .blurb {
+    display: inline-block;
     border-bottom: 1px solid #d3d3d3;
-    padding: 50px 0 65px;
-    text-align: center;
+    padding: 70px 0px;
+}
+
+.blurb .about-text {
+    text-align: left;
+    color: #606060;
+}
+
+.blurb .about-text .lead-paragraph {
+    font-size: 19.2px;
+    font-weight: 600;
+}
+
+.blurb .about-text p {
+    font-size: 16px;
+}
+
+.blurb .logo-img {
+    text-align: right;
 }
 
 .project-list {
@@ -119,17 +138,22 @@ a:hover {
 
 .project a {
     color: #006dad;
+    font-weight: 600;
 }
 
 .project .desc {
     font-weight: normal;
+    color: #464646;
 }
 
 .row h2 {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
+    color: #464646;
 }
 
 .row .subtitle {
     font-size: 16px;
+    font-weight: 500;
+    color: #464646;
 }
