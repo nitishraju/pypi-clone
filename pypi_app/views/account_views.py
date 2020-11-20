@@ -6,7 +6,8 @@ blueprint = flask.Blueprint('account', __name__, template_folder='templates')
 #INDEX METHOD
 @blueprint.route('/account')
 def index():
-    return flask.render_template('account/index.html')
+    return flask.render_template('account/index.html'
+                                 '')
 
 
 #LOGIN METHODS

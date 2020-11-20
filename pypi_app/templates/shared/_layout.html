@@ -9,6 +9,7 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/static/css/site.css"/>
+    <link rel="stylesheet" href="/static/css/nav.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic|Source+Code+Pro:500">
 
     {% block additional_css %}{% endblock %}
@@ -16,8 +17,29 @@
 </head>
 <body>
 
-<nav>
-    <a href="/">Home</a>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse navbar-expand-md">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/static/img/logo-small.svg"/></a>
+
+        <button class="navbar-toggler navbar-toggle" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-toggler-icon">
+                <div class="nav-expand-line"></div>
+                <div class="nav-expand-line"></div>
+                <div class="nav-expand-line"></div>
+            </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sponsor</a></li>
+                <li class="nav-item"><a class="nav-link" href="/account/login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/account/register" id="last_nav_link">Register</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 <div class="main_content">

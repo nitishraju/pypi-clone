@@ -59,6 +59,7 @@ a:hover {
 
 .hero h1 {
     font-size: 40px;
+    font-weight: 600;
 }
 
 .hero a {
@@ -95,10 +96,40 @@ a:hover {
     text-align: center;
 }
 
-.project-list .subtitle{
-    font-style: italic;
+.project-list {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #ECECEC;
 }
 
-.project-list h2 {
+.project-list .project {
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,.05);
+    min-height: 45px;
+    margin-top: 15px;
+    color: black;
+    margin-bottom: 15px;
+}
 
+.project .title {
+    font-size: 18.4px;
+}
+
+.project a {
+    color: #006dad;
+}
+
+.project .desc {
+    font-weight: normal;
+}
+
+.row h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.row .subtitle {
+    font-size: 16px;
 }
