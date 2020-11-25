@@ -6,8 +6,9 @@ blueprint = flask.Blueprint('home', __name__, template_folder='templates')
 
 @blueprint.route('/')
 def index():
-    test_packages = package_service.get_latest_packages()
-    return flask.render_template('home/index.html', packages=test_packages)
+    trending_packages, new_packages = package_service.get_latest_packages()
+    return flask.render_template('home/index.html',
+                                 trending_packages=trending_packages, new_packages=new_packages)
 
 @blueprint.route('/about')
 def about():

@@ -54,6 +54,10 @@
     font-size: 16px;
 }
 
+.nav-link:hover {
+    text-decoration: underline;
+}
+
 #last_nav_link {
     margin-right: 45px;
 }

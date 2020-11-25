@@ -21,12 +21,12 @@
         <div class="stat">463,005 users</div>
     </div>
 
-    <div class="container-fluid blurb">
-        <div class="row about">
-            <div class="col-lg-5 logo-img">
-                <!-- PLACEHOLDER -->
+    <div class="blurb">
+        <div class="blurb-inner">
+            <div class="about-logo">
+                <img alt src="/static/img/logo-large.svg">
             </div>
-            <div class="col-lg-7 about-text">
+            <div class="about-text">
                 <p class="lead-paragraph">
                     The Python Package Index (PyPI) is a repository of software for the Python programming language.
                 </p>
@@ -41,13 +41,13 @@
             <div class="col-lg-2"></div>
             <div class="col-lg-4">
 
-                <h2>Trending Projects</h2>
+                <h2>Trending projects</h2>
 
                 <div class="subtitle">
                     Trending projects as downloaded by the community
                 </div>
 
-                {% for p in packages %}
+                {% for p in trending_packages %}
                 <div class="project">
                     <div class="title">
                         <a href="#">{{ p.name }} {{ p.version }}</a>
@@ -59,17 +59,17 @@
             </div>
             <div class="col-lg-5">
 
-                <h2>New Releases</h2>
+                <h2>New releases</h2>
 
                 <div class="subtitle">
                     Hot off the press: the newest project releases
                 </div>
 
-                {% for p in packages %}
+                {% for p in new_packages %}
                 <div class="project">
                     <div class="title">
                         <a href="#">{{ p.name }} {{ p.version }}</a>
-                        <div class="desc">PLACEHOLDER DESC</div>
+                        <div class="desc">{{ p.desc }}</div>
                     </div>
                 </div>
                 {% endfor %}

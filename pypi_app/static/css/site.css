@@ -15,22 +15,6 @@ body {
     margin: 0;
 }
 
-nav {
-    background-color: #0073b7;
-    padding: 10px;
-    font-size: 20px;
-    color: white;
-    height: 85px;
-}
-
-nav > a {
-    color: white;
-}
-
-a:hover {
-    color: blue;
-}
-
 .hero {
     background-color: #006dad;
     color: white;
@@ -47,7 +31,7 @@ a:hover {
 
 .banner-text {
     padding-bottom: 40px;
-    margin: 0px 40px;
+    margin: 0 40px;
 }
 
 .search-bar {
@@ -92,27 +76,48 @@ a:hover {
 }
 
 .blurb {
-    display: inline-block;
     border-bottom: 1px solid #d3d3d3;
-    padding: 70px 0px;
+    height: 310px;
+    padding: 70px 0
 }
 
-.blurb .about-text {
+.blurb-inner {
+    margin: 0 auto;
+    display: table;
+    padding: 0 30px;
+    table-layout: auto;
+    max-width: 1000px;
+}
+
+.about-logo {
+    display: table-cell;
+    padding: 19px 50px 0 0;
+}
+
+.about-logo img {
+    width: 220px;
+    max-width: 100%;
+    max-height: 160px;
+    margin: -15px 50px 0 0;
+}
+
+.about-text {
+    padding: 0 0 20px;
+    display: table-cell;
+    vertical-align: top;
     text-align: left;
+    position: relative;
     color: #606060;
 }
 
-.blurb .about-text .lead-paragraph {
+.about-text .lead-paragraph {
     font-size: 19.2px;
     font-weight: 600;
 }
 
-.blurb .about-text p {
-    font-size: 16px;
-}
-
-.blurb .logo-img {
-    text-align: right;
+.about-text p {
+    padding-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .project-list {
@@ -141,6 +146,11 @@ a:hover {
     font-weight: 600;
 }
 
+.project a:hover {
+    color: #003d61;
+    text-decoration: none;
+}
+
 .project .desc {
     font-weight: normal;
     color: #464646;
@@ -148,7 +158,7 @@ a:hover {
 
 .row h2 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 20.8px;
     color: #464646;
 }
 
@@ -156,4 +166,37 @@ a:hover {
     font-size: 16px;
     font-weight: 500;
     color: #464646;
+}
+
+.footer {
+    padding: 60px 0;
+    background-color: #006dad;
+    color: white;
+}
+
+.footer .footer-logo {
+    text-align: center  ;
+    margin: 0 auto 30px;
+}
+
+.footer .footer-divider .divider {
+    width: 200px;
+    margin: 0 auto 30px;
+    border: 1px solid hsla(120, 0%, 100%, .3);
+    background: none;
+    height: 0;
+}
+
+.footer .footer-text {
+    text-align: center;
+}
+
+.footer .footer-text h2 {
+    font-size: 20.8px;
+}
+
+.footer .footer-text a {
+    color: hsla(0,0%,100%,.95);
+    text-decoration: none;
+    border-bottom: 1px solid white;
 }

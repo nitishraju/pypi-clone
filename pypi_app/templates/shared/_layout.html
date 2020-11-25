@@ -37,7 +37,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Sponsor</a></li>
-                <li class="nav-item"><a class="nav-link" href="/account/login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/account/login">Log in</a></li>
                 <li class="nav-item"><a class="nav-link" href="/account/register" id="last_nav_link">Register</a></li>
             </ul>
         </div>
@@ -47,6 +47,19 @@
 <div class="main_content">
     {% block main_content %}No Content{% endblock %}
 </div>
+
+<footer class="footer">
+    <div class="footer-logo">
+        <img src="/static/img/white-cube.svg" alt>
+    </div>
+    <div class="footer-divider">
+        <hr class="divider">
+    </div>
+    <div class="footer-text">
+        <h2>This is a clone of the Python Package Index.</h2>
+        You can find the real Python Package Index at <a href="https://pypi.org">pypi.org</a>. <br>
+    </div>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
