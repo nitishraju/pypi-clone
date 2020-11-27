@@ -1,7 +1,9 @@
 import sqlalchemy as sa
 
+from pypi_app.data.modelbase import ModelBase
 
-class Package:
+
+class Package(ModelBase):
 
     __tablename__ = 'packages'
 
