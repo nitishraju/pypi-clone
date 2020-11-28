@@ -10,6 +10,6 @@ def index():
     return flask.render_template('home/index.html',
                                  trending_packages=trending_packages, new_packages=new_packages)
 
-@blueprint.route('/about')
+@blueprint.route('/about/')
 def about():
     return flask.render_template('home/about.html')

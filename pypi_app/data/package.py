@@ -7,7 +7,7 @@ class Package(ModelBase):
 
     __tablename__ = 'packages'
 
-    id = sa.column(sa.String, primary_key=True)
+    id = sa.Column(sa.String, primary_key=True)
     release_date = sa.Column(sa.DateTime)
     summary = sa.Column(sa.String)
     description = sa.Column(sa.String)
