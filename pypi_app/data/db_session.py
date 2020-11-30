@@ -15,11 +15,12 @@ def global_init(db_file: str):
         raise FileNotFoundError('Please specify a valid database file.')
 
     connection_str = 'sqlite:///' + db_file.strip()
+    print(f'Connecting to DB through {connection_str}')
 
-    engine = sa.create_engine(connection_str, echo=True)
+    engine = sa.create_engine(connection_str, echo=True, connect_args={"check_same_thread": False})
     factory = orm.sessionmaker(bind=engine)
 
-    #import allows sqlalchemy to create db using Package metadata
-    from pypi_app.data.package import Package
+    #noinspection PyUnresolvedReferences
+    import pypi_app.data.__model_preloads
 
     ModelBase.metadata.create_all(engine)

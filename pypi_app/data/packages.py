@@ -21,8 +21,6 @@ class Package(ModelBase):
 
     license = sa.Column(sa.String)
 
-    #TODO: Maintainers
-    #TODO: RELEASES
 
     def __repr__(self):
         return f'Package: {self.id}'
