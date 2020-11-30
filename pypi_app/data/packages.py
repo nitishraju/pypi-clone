@@ -1,6 +1,8 @@
 import sqlalchemy as sa
+import sqlalchemy.orm as orm
 
 from pypi_app.data.modelbase import ModelBase
+from pypi_app.data.releases import Release
 
 
 class Package(ModelBase):
@@ -21,6 +23,12 @@ class Package(ModelBase):
 
     license = sa.Column(sa.String)
 
+    #relationship to releases
+    releases = orm.relation("Release", order_by=[
+        Release.major_ver.desc(),
+        Release.minor_ver.desc(),
+        Release.build_ver.desc()
+    ], back_populates='package')
 
     def __repr__(self):
         return f'Package: {self.id}'
